@@ -1,0 +1,16 @@
+even = []
+odd = []
+while True:
+    inputnum = input('Put a number here, use "esc" to stop : ')
+    if inputnum == 'esc':
+        break
+    else:
+        inputnum = int(inputnum)
+        if inputnum%2 == 0 :
+            even.append(inputnum)
+        else:
+            odd.append(inputnum) 
+
+for even_num in even:
+    for odd_num in odd:
+        print((odd_num,even_num))
